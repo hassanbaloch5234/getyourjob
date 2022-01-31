@@ -1,0 +1,297 @@
+*{
+    padding: 0;
+margin: 0;
+box-sizing: border-box;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
+
+
+
+
+
+header
+{
+    width: 100%;
+height: 100vh;
+color: whitesmoke;
+background: url(samuele-errico-piccarini-FMbWFDiVRPs-unsplash.jpg) no-repeat center center/cover;
+background-position: fixed;
+
+animation: blacktoimg 10s ease-in;
+}
+
+footer{
+    display: none;
+}
+ #menu-box{
+    display: none;
+}
+.navlist{
+    display: none;
+} 
+
+
+nav{
+    display: flex;
+    width: 100%;
+align-items: center;
+    animation: slideinformtop 1s ease-in;
+padding: 1rem 1rem;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+nav ul{
+ 
+    display: flex;
+justify-content: space-between;
+align-items: center;
+margin-left:2rem;
+}
+nav ul li{
+    list-style-type:none ;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.651);
+padding: 40px 40px;
+font-size: 0.9rem;
+border:0px;
+}
+
+nav ul li a:hover{
+color: white;
+
+}
+
+.logo{
+    padding: 0px 0px;
+font-size: 1.5rem;
+margin-left:  2rem;
+
+
+
+}
+.logo img{
+    position: relative;
+    width: 100px;
+
+
+    animation: slideinformleft 1s ease-in;
+}
+
+.logo img:hover{
+   
+transform: translateX(50px);
+transition: all ease 1.9s;
+}
+
+.fa-bars{
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top:-110px;
+    right: 10px;
+    z-index: 222;
+}
+.search-sm{
+   display: none;
+  }
+
+#menu-box{
+    display: none;
+}
+.navlist{
+    display: none;
+}
+
+#menu-box A{
+    display: none;
+}
+
+
+
+.fa-bars:hover{
+transform: scale(110%);
+transform: rotate(360deg);
+transition: all ease 1s;
+
+}
+.right-fixed{
+   
+        position: absolute;
+        right: 10px;
+        top: 162px;
+    }
+
+.search{
+
+    border: 1PX solid  rgba(245, 245, 245, 0.212);
+    color: whitesmoke;
+
+    border-radius: 15px;
+    width: 500px;
+margin: 0 5rem;
+ padding:0 5rem;display: flex;align-items: center;
+}
+.search input{
+    background-color: transparent;
+    width: 100%;
+    padding: 10px 60px;
+    border: 0;
+    color: whitesmoke;
+
+    
+    
+}
+.fa-search{
+    font-size: 1rem;
+    position:absolute;
+}
+.fa-search:hover{
+
+transition:  all ease 3s;
+}
+
+input:focus{
+    outline: 0;
+}
+
+
+.fa-circle{
+  
+font-size: 0.6rem;
+margin: 20px;
+}
+
+.mobile
+{
+    display: flex;
+    width: 300px;
+    height: 100vh;
+}
+
+
+@keyframes slideinformleft{
+    0%{
+        transform: translateX(-100%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+
+
+
+}
+
+@keyframes slideinformright{
+    0%{
+        transform: translateX(100%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+
+
+
+}
+
+@keyframes slideinformtop{
+    0%{
+        transform: translateY(-100%)
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+
+
+
+}
+
+
+
+@keyframes blacktoimg{
+
+    0%{
+        background-color: black;
+        background: black;
+    }
+   100%{
+        background-color:transparent;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+.clm{
+    display: flex;flex-direction: column;
+    position: absolute;
+    top: 300px;
+    margin-left: 5rem;
+}
+
+
+
+
+
+.grid-2{
+    display: grid;
+    width: 100%;
+    grid-template-columns:repeat(2,1fr);
+    padding: 10px 100px;
+  
+}
+
+.text{
+    font-size: 4rem;
+text-align: center;
+background-color: rgba(0, 0, 0, 0.349);
+height: 100%;
+
+animation: slideinformleft 1s ease-in;
+}
+
+.box{
+    width: 500px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.123);
+padding: 50px 100px;
+animation: slideinformright 1s ease-in;
+backdrop-filter: blur(5px);
+   
+    font-size: 1rem;
+}
+.info{
+    margin-top: 10px;
+}
+
+.date{
+    margin: 50px 0px;
+    font-size: 2rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
